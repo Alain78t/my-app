@@ -1,0 +1,137 @@
+/* DIRECTIVES CSS TOUJOURS EN PREMIER */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/* RAZ des valeurs par défaut */
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   /* Couleurs natives */
+   background: salmon ;
+    background: #F5166E;
+    /* Couleurs calculées  */
+    background: rgb(255,255,0);
+    background: hsl(220,100%,50%)
+
+
+}
+
+
+h2, h3 {
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+}
+.bg-agency {
+    background: url(../pics/bg-wall.jfif) fixed ;
+    background-size: cover;
+}
+
+/* CONTAINER */
+#container {
+    min-height: 100vh;
+    /* Transparence */
+    
+    background: rgba(255,255,0,.5);
+    background: hsla(0,100%,50%,.5);
+    background: #FFFFFF7F;
+
+}
+
+/* INDEX - HEADER */
+#enTete {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 7rem;
+}
+
+#titre {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 5rem;
+    margin: 0;
+}
+
+
+/* INDEX  MENU */
+
+#menu {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#menu .menuItem a {
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+    font-size: 2rem;
+    border: #000 solid .25rem ;
+    padding: .75rem;
+    background: linear-gradient(#555,#000);
+    display: block;
+    margin: .25rem 0;
+     transition: all 1s;
+}
+#menu .menuItem a:hover {
+    border: #00f solid .25rem ;
+    background: linear-gradient(#55f,#00f);
+    text-shadow: 0 0 .75rem #ffd700;
+ 
+}
+
+
+/* INDEX - SECTION TEAM */
+#team {
+    /* display: flex; */
+
+}
+
+#teamMembers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.member {
+    width:  20rem;
+    border : #000 solid .25rem;
+    text-align: center;
+    padding: 1rem;
+    background: #0cfa;
+    margin: 1rem ;
+    /* position: relative; */
+    
+}
+
+.member img {
+    width: 100%;
+}
+
+.member a {
+    text-decoration: none;
+    color: #000 ;
+    border: #ffd700 solid .25rem;
+    background: linear-gradient(#ff0,#fd0);
+    padding: 1rem;
+    display: block;
+    font-weight: bold;
+    border-radius: .25rem;
+    /* position: relative ;
+    bottom: 0;
+    right:0; */
+}
+
+ /* INDEX VIDEO */
+
+#multimedia {
+    width: 80vw;
+    margin: 1rem auto;
+}
+
+ #multimedia video {
+    width: 100%;
+ }

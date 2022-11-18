@@ -1,0 +1,8 @@
+/* Personnalisation de Bootstrap (surcharge) */
+.bgImage {
+    background-image: url('../pics/bg-wall2.jpg');
+    background-size: cover ; 
+    color: #fff;
+    font-weight: bolder;
+    text-shadow: 0 0 .25rem #0000;
+}

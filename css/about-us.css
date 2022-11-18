@@ -1,0 +1,140 @@
+/* SELECTEURS DE BASE : BALISE   */
+h1 {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: brown;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Donner une couleur différente à h2 et h3 */
+h2 {
+    color:blue;
+}
+h3{
+    color: blueviolet;
+}
+
+img {
+/* height:10rem; */
+width: 20rem;
+border: black solid .1rem;
+margin: .5rem;
+box-shadow: .25rem .25rem 0 gray;
+}
+
+/* Ombre portée sur h1 à h4 en gris tout autour du texte  */
+h1,h2,h3,h4 {
+    /* text-shadow: .3rem .3rem .3rem .3rem 0 greenyellow; */
+    /* text-shadow: gray .25rem 0 .25rem; */
+    text-shadow: 0 0 .25rem white , 0 0 1rem black;
+}
+
+/* SELECTEURS DE BASE : CLASS   */
+ /* #id (100) > .class (10) > :tar (1) */
+
+.redText {
+    color: red;
+}
+
+.italicText {
+    font-style: italic ;
+}
+.codeStyle{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* SELECTEURS DE BASE : ID   */
+#htop{
+    color:green;
+}
+h1 {
+    color: yellow !important;
+}
+
+/* SELECTEURS HIERACHIQUES : PARENT > ENFANT */
+
+ol > li {
+    list-style: upper-roman;
+    font-style: italic;
+}
+
+/* SELECTEURS HIERACHIQUES : ASCENDANT DESCENDANT */
+dl dt {
+/*    margin-top: .5;
+    margin-bottom: .5rem; */
+    margin: .5rem 0 ;
+}
+
+/* SELECTEURS HIERACHIQUES : FRERE + SOEUR */
+
+
+h2 + p , dt + dd {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* PSEUDO CLASSE */
+/* Pour la balise a: link, visited, hover, active  */
+
+#navBar {
+    background: black;
+    text-align: center;
+    padding: 1rem; 
+    color:white;
+    margin-top: 3rem;
+}
+
+#navBar a:link, a:visited {
+  color: inherit;
+
+}
+
+#navBar a:hover {
+    font-weight: bold;
+}
+
+#navBar a {
+    text-decoration: none;
+}
+
+/* Tableau ayant 50% de la largeur du doc et affichage bordure */
+
+table {
+    width: 50vw ;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+}
+
+table, td, th {
+        border: .1rem brown solid ;
+   
+    
+}
+
+
+tbody tr:first-child {
+    background: yellow;
+}
+
+tbody tr:last-child {
+    background: lightgreen;
+}
+
+tbody tr:nth-child(2) {
+    background: lightskyblue;
+}
+ /* 2n ou even = pair  */
+tbody tr:nth-of-type(2n) {
+    background: pink;
+}
+ /* 2n+1 ou odd = impair  */
+tbody tr:nth-of-type(2n+1) {
+    background: salmon;
+}
+
+tbody tr:hover {
+    background: goldenrod;
+    cursor: pointer;
+}
